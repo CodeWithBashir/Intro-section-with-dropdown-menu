@@ -53,6 +53,9 @@ html {
   margin-left: 0.6rem;
 }
 
+.logo-icon {
+  cursor: pointer;
+}
 .cta-btn {
   display: flex;
   align-items: center;
