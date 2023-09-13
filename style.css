@@ -96,28 +96,30 @@ html {
 /* HERO - SECTION */
 
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 13rem 15rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
+  padding: 5rem 5rem;
 
-  position: relative;
+  margin: 0 auto;
 
-  overflow: hidden;
+  /* position: relative; */
+
+  /* overflow: hidden; */
 }
 
 .hero-content {
-  width: 50%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 8rem;
+  gap: 5rem;
+
+  margin-left: 12rem;
 }
 
 .hero-content h1 {
-  font-size: 11rem;
+  font-size: 10rem;
   font-weight: 700;
   /* line-height: 1.1; */
 }
@@ -147,15 +149,10 @@ html {
 }
 
 .hero-img {
-  width: 50%;
-  position: absolute;
-
-  right: 0;
-  left: 105rem;
-  top: 0;
+  margin-left: 5rem;
 }
 .hero-img img {
-  width: 60%;
+  width: 70%;
 }
 
 .features {
@@ -178,14 +175,14 @@ ul.dropdown {
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 
   border-radius: 1rem;
   list-style: none;
 
   z-index: 1000;
 
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 .dropdown-list {
@@ -194,7 +191,7 @@ ul.dropdown {
 
   align-items: center;
   color: hsl(0, 0%, 41%);
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .feature-apps {
