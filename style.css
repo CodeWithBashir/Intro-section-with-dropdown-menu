@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* NAVBAR - SECTION */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 3rem 5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  margin-right: auto;
+
+  margin-top: -1rem;
+  gap: 3rem;
+  padding-left: 7rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+
+  position: relative;
+}
+
+.nav-list:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.down-arrow {
+  margin-left: 0.6rem;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  padding: 2rem;
+  color: hsl(0, 0%, 41%);
+
+  margin-top: -1rem;
+  gap: 3rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-sign-up {
+  padding: 1.3rem 2rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-sign-up:hover {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+}
+
+.btn-login:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.hero-left .cta:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+
+/* HERO - SECTION */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13rem 15rem;
+  gap: 10rem;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8rem;
+}
+
+.hero-content h1 {
+  font-size: 11rem;
+  font-weight: 700;
+  /* line-height: 1.1; */
+}
+
+.hero-content p {
+  font-size: 2.8rem;
+
+  line-height: 1.5;
+  color: hsl(0, 0%, 41%);
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hero-left .cta {
+  padding: 2rem 2.5rem;
+  font-size: 2rem;
+  color: hsl(0, 0%, 98%);
+  font-weight: 500;
+  align-self: flex-start;
+  border-radius: 1.3rem;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.hero-img {
+  width: 50%;
+  position: absolute;
+
+  right: 0;
+  left: 105rem;
+  top: 0;
+}
+.hero-img img {
+  width: 60%;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-logo img {
+  width: 10%;
+}
+
+/* DropDwon Menu */
+
+ul.dropdown {
+  position: absolute;
+  font-size: 1.6rem;
+  padding: 0 3rem;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  border-radius: 1rem;
+  list-style: none;
+
+  z-index: 1000;
+
+  padding-top: 2.5rem;
+}
+
+.dropdown-list {
+  text-decoration: none;
+  display: flex;
+
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 2rem;
+}
+
+.feature-apps {
+  transform: translateX(-40%);
+}
+
+.feature-icon {
+  margin-right: 1.6rem;
+}
+ul li ul.dropdown {
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
